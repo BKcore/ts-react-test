@@ -7,3 +7,4 @@
 /// <reference path="react/react-addons.d.ts" />
 /// <reference path="react-router/history.d.ts" />
 /// <reference path="react-router/react-router.d.ts" />
+/// <reference path="material-ui/material-ui.d.ts" />

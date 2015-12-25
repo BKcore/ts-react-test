@@ -25,8 +25,8 @@ export default class ContentPage extends React.Component<IProps, IState> {
   }
 
   render(): React.ReactElement<{}> {
-    return <div className={styles.container}>
-      Test Module
+    return <div className={styles.Test}>
+      <h1>Test Component</h1>
     </div>;
   }
 

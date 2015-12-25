@@ -8,7 +8,9 @@ const styles: any = require("./Home.module.less");
 
 export default class ContentPage extends React.Component<{}, {}> {
 
-    render(): React.ReactElement<{}> {
-        return <div className={styles.container}>Home Module</div>;
-    }
+  render(): React.ReactElement<{}> {
+    return <div className={styles.Home}>
+      <h1>Home Component</h1>
+    </div>;
+  }
 }
