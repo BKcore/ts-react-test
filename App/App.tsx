@@ -43,8 +43,8 @@ export default class App extends React.Component<IAppProps, {}> {
           onChange={(value: string, e: {}, tab: __MaterialUI.Tabs.Tab) => {
           this.transitionTo(tab.props.value);
         }}>
-          <Tab label="Home" value="/" style={tabStyle}/>
-          <Tab label="Test" value="/test" style={tabStyle}/>
+          <Tab label="HOME" value="/" style={tabStyle}/>
+          <Tab label="TEST COMPONENT" value="/test" style={tabStyle}/>
         </Tabs>
       } />
       <div style={contentStyle}>{this.props.children}</div>
