@@ -4,16 +4,15 @@
 import React = require("react");
 import ReactRouter = require("react-router");
 const {Link, IndexLink} = ReactRouter;
-const AppCanvas = require('material-ui/lib/app-canvas');
-const ClearFix = require('material-ui/lib/clearfix');
-const AppBar = require('material-ui/lib/app-bar');
-const Tabs = require('material-ui/lib/tabs/tabs');
-const Tab = require('material-ui/lib/tabs/tab');
-const MenuItem = require('material-ui/lib/menus/menu-item');
 
 const globalStyles: any = require("./Global/Styles/main.less");
 const styles: any = require("./App.module.less");
 /* tslint:enable */
+
+import AppCanvas = require("material-ui/lib/app-canvas");
+import AppBar = require("material-ui/lib/app-bar");
+import Tabs = require("material-ui/lib/tabs/tabs");
+import Tab = require("material-ui/lib/tabs/tab");
 
 // Material-UI style overrides
 const contentStyle: {} = {
@@ -48,7 +47,7 @@ export default class App extends React.Component<IAppProps, {}> {
           <Tab label="Test" value="/test" style={tabStyle}/>
         </Tabs>
       } />
-      <ClearFix style={contentStyle}>{this.props.children}</ClearFix>
+      <div style={contentStyle}>{this.props.children}</div>
     </AppCanvas>;
   }
 
